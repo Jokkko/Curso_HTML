@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 03 - CSS</title>
+
+    <!-- Estilo interno de css dentro del HEAD -->
+    <style>
+        h4{
+            color:tomato;
+            font-size: 23px;
+        }
+    </style>
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+</head>
+<body>
+
+    <h1>Estilos CSS</h1>
+
+    <!-- Para incorporar css existen tres maneras -->
+
+    <!-- ! Agregar a mi html CSS -->
+    <!-- ? 1. CSS EN LINEA a traves de la etiqueta con el atributo style="" (Evitar) -->
+    <!-- ? 2. CSS Interno (Dentro del documento) a traves de <style></style> -->
+    <!-- ? 3. CSS externo (Recomendada) Css en un archivo externo con extension .css -->
+
+    <!-- ! FORMA 1 agregar estilo en linea -->
+    <!-- *Arquitectura de un estilo en linea -->
+    <!--  <etiqueta style="propiedad: valor"> "Contenido" </etiqueta> -->
+
+    <h2 style="color:rgb(126, 199, 228)">H2ola mundo</h2>
+    <h3 style="color:greenyellow; font-size: 50px;" >H3ola mundo</h3>
+
+    <!-- ! FORMA 2 CSS interno dentro del HTML -->
+    <!-- *Arquitectura de un CSS Interno y externo -->
+    <!-- El selector la etiqueta (Su nombre) 
+        selector{
+            propiedad1:valor1;
+            propiedad2:valor2;
+        }
+    -->
+    <h4>H4ola Mundo</h4>
+
+    <!-- ! FORMA 3. Agregar estilos por una hoja de estilos vinculada al html -->
+    <!-- Necesito vincular una hoja de css en el head -->
+
+    <h5>H5ola Mundo</h5>
+
+</body>
+</html>

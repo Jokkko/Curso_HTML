@@ -1,0 +1,15 @@
+*{/* Selector universal */
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{ /* Es un flexbox */
+    display: flex;   
+    background-color: tomato;
+    flex-direction: column;
+}
+
+header{
+    background-color: #131313;
+}

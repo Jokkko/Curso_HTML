@@ -1,0 +1,23 @@
+.fondoSilver{
+    background-color: silver;
+}
+
+#titulo-piola{
+    color: rgb(29, 29, 242);
+}
+
+.colorDarkTomato{
+    color: rgb(110, 44, 32);
+}
+
+.textoGrande{
+    font-size: 50px;
+}
+
+.textoMediano{
+    font-size: 25px;
+}
+
+.textoChico{
+    font-size: 10px;
+}

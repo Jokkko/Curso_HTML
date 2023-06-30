@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 05 - Forms POST</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <h1>Forms POST</h1>
+    
+    <!-- Si no coloco method, por defecto es GET -->
+    <!-- Action es la url del servidor (endpoint) donde se va a enviar la informacion del formulario -->
+    <!-- Autocomplete : on off Provoca que no se autocomplete, es un atributo -->
+    <!-- Required: es un atributo que provoca que un dato sea necesario para enviar el formulario -->
+    
+    <form action="https://formspree.io/f/mwkdeobg" method="POST">
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" autocomplete="off">
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" name="apellido">
+
+        <label for="email">Email:</label>
+        <input type="email" name="email">
+
+        <label for="edad">Edad:</label>
+        <input type="number" name="edad">
+        
+        <label for="encriptado">Dato Encriptado:</label>
+        <input type="password" name="encriptado" required>
+
+        <button type="submit">Enviar</button>
+
+    </form>
+
+</body>
+</html>

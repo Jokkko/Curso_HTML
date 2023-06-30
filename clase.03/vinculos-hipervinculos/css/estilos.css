@@ -1,0 +1,39 @@
+body{
+    background-color: silver;
+}
+
+
+/* Pseudo clases de los links */
+/* Las pseudo clases van acontinuacion del elemento seleccionado con : */
+
+/* 
+    1. :link
+    2. :visited
+    3. :hover
+    4. :active
+*/
+
+/* !Arquitectura pseudoclases  */
+/* * selector:pseudoclase */
+
+a:link{
+    color: black;
+}
+
+a:visited{ /* Una ves que lo visite */
+    color: black;
+    
+}
+
+a:hover{ /* Cuando le paso el mouse por encima */
+    text-decoration: solid;
+    color: blue;
+}
+
+a:active{ /* Cuando lo presione */
+    color: aliceblue;
+}
+
+a:focus{ /* Para el tabulador */
+    background-color: tomato;
+}

@@ -1,0 +1,13 @@
+/* 
+*Arquitectura del estilo externo
+selector{
+    propiedad1: valor1;
+    propiedad2: valor2;
+}
+*/
+
+/* Selector de etiqueta */
+h5{
+    color: cadetblue;
+    font-size: 45px;
+}

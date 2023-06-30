@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 05 - Formularios</title>
+    <link rel="stylesheet" href="css/estilos.css">
+
+</head>
+<body>
+
+    <h1>Formularios en html</h1>
+    
+    <p> Para crearlo se usa la etiqueta form </p>
+    <!-- Sirven para recopilar informacion y permitir que los usuarios envien datos al servidor para su posterior procesado -->
+
+    <h2>Sus atributos</h2>
+    <ul>
+        <li>action: Es la url a donde se va a enviar la informacion recopilada </li>
+        <li>metod: (protocolo http - metodos http) - Metodo POST y GET solo atraves de estas dos formas se puede enviar la info
+        GET = a traves de la url
+        POST = a traves de el cuerpo del html </li>
+        <li>target: Funciona igual que en los links (a /a) si pongo _blank en pesta nueva si pongo _self se abre en la misma pestania  </li>
+    </ul>
+
+    <h2>Al enviarse el formulario crea una url (Query string)</h2>
+    
+    <p>Cuando envio la informacion a traves de GET el formulario arma la URL para enviar la informacion. A esa URL se la conoce como Query String</p>
+
+    <p>www.servidor(backend).net/?nombrevalor1=valor1&nombredevalor2=valor2</p>
+
+    <h2>Buscar palabra en google</h2>
+    
+    <!--* https://www.google.com/search?q=valor-q -->
+
+    <form action="https://www.google.com/search" method="GET" target="_blank">    <!-- Altero el estilo del form como si fuera un div  -->
+        <label for="">Ingrese la palabra a buscar</label> <!-- Recordatorio de que se va a escribir (No obligatoria) -->
+        <input type="text" name="q" placeholder="Ingrese una palabra aqui"> <!-- Campo de texto. Donde se puede escribir -->
+        <button type="submit">Buscar</button>
+    </form>
+
+    <h2>Buscar en yahoo</h2>
+    <!--* https://ar.search.yahoo.com/search?p=valor-p -->
+
+    <form action="https://ar.search.yahoo.com/search" method="GET" target="_blank">
+        <label for="">Ingrese la palabra a buscar</label>
+        <input type="text" name="p" placeholder="Ingrese una palabra aqui"> 
+        <button type="submit">Buscar</button>
+    </form>
+
+    <h2>Buscar en Bing</h2>
+    <!--* https://www.bing.com/search?q -->
+    <form action="https://www.bing.com/search" method="GET" target="_blank">
+        <label for="">Ingrese la palabra a buscar</label>
+        <input type="text" name="q" placeholder="Ingrese una palabra aqui"> 
+        <button type="submit">Buscar</button>
+    </form>
+
+    <h2>Buscar en Duck Duck Go</h2>
+    <!--* https://duckduckgo.com/?q -->
+    <form action="https://duckduckgo.com/" method="GET" target="_blank">
+        <label for="">Ingrese la palabra a buscar</label>
+        <input type="text" name="q" placeholder="Ingrese una palabra aqui"> 
+        <button type="submit">Buscar</button>
+    </form>
+
+    <h2>Buscar en Youtube</h2>
+    <!-- https://www.youtube.com/results?search_query -->
+    <form action="https://www.youtube.com/results" method="GET" target="_blank">
+        <label for="">Ingrese la palabra a buscar</label>
+        <input type="text" name="search_query" placeholder="Ingrese una palabra aqui"> 
+        <button type="submit">Buscar</button>
+    </form>
+</body>
+</html>

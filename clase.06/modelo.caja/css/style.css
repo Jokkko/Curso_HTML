@@ -1,0 +1,54 @@
+h1{
+    /* Modelo de caja */
+    /* Contenido */
+    width: 150px ;
+    height: auto ;
+
+    /* Padding */
+    padding: 20px; /* Short hand 1 */
+    
+    /* Border (shorthand)*/
+    border: 3px solid crimson;
+    
+    /* Margin */
+    margin: 20;
+}
+
+#link1{
+    border: 2px solid crimson;
+    padding: 20px;
+}
+
+#division-1{
+    background-color: 131313;
+    /* Margin 50px */
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+#division-2{
+    /* margin: top/botom left/right */
+    margin: 10px 20px;
+
+    /* top right bottom y left */
+}
+
+#division-3-padding{
+    padding: 20px;
+    background-color: silver;
+}
+
+#division-4-padding{
+    background-color:blue ;
+
+}
+
+#division-5-border{
+    border-top-style: solid ;
+    border-top-color:red ;
+}
+#division-6-border{
+    border-bottom-style: solid ;
+}

@@ -1,0 +1,101 @@
+*{/* selector universal */
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: silver;
+}
+
+/* La mayoria de propiedades css van sobre el padre */
+.contenedor-papa{
+    display: flex; /* Contenedor flexible */
+    background-color: #131313;
+    height: 500px;
+    padding: 20px;
+
+    /* flex-direction */
+    flex-direction: row;
+    /* row default, eje principal horizontal */
+    /* colum, eje principal vertical */
+    /* row-reverse igual que el row invertido */
+    /* colum-reverse igual que colum pero invertido */
+
+    /* flex-wrap */
+    flex-wrap: nowrap;
+    /* nowrap Rompe el contenedor si los hijos no entran en el padre */
+    /* wrap acomoda los elementos segun el espacio, si no entra, los acomoda debajo */
+    /* wrap-reverse invierte el compartamiento del wrap */
+
+    /* Me gestiona el eje principal */
+    /* justify-content (eje principal horizontal row)*/
+    justify-content: start;
+    /* Start default todo a la izq del contenedor padre en row*/
+    /* Center manda todo al centro del contenedor padre en row */
+    /* end, manda todo al fondo del contenedor padre en row*/
+    /* space-between me los separa segun el espacio disponible*/
+    /* space-around me los distribuye dejando a los costados una dimension y entre ellos el doble */
+
+    /* align-items */
+    align-items: center;
+    /* Gestiona el eje secundario si tengo activo row por el contrario gestiona el principal si tengo column activo */
+    /* es stretch por default estira el eje secundario ocupando todo el contenedor */
+    /* start los lleva a la parte superior del contenedor*/
+    /* end me posiciona los hijos en la parte inferior del contenedor*/
+    /* center me posiciona a los hijos en el centro del contenedor */
+}
+
+
+/* Propiedades que se aplican sobre los hijos */
+
+/* order: Por defecto es 0, y acepta valores negativos */
+/* flex-grow: por defecto en posicion 0  */
+/* flex-shrink: por defecto esta en 1  */
+/* flex-basis: establece el tamanio inicial del elemento valor por defecto auto */
+
+
+.hijo{
+    background-color: aqua;
+    padding: 30px;
+    margin: 2px;
+   
+    text-align: center;
+    color: #131313;
+}
+
+.hijo1{
+    background-color: blanchedalmond;   
+    order: 10;
+    flex-grow: 0;
+    flex-shrink: 100; 
+    flex-basis: auto;
+}
+.hijo2{
+    background-color: white;   
+    order: 20;
+    flex-grow: 0;
+    flex-shrink: 1; 
+    flex-basis: auto;
+}
+.hijo3{
+    background-color: gray  ;   
+    order: 30;
+    flex-grow: 0;
+    flex-shrink: 1; 
+    flex-basis: auto;
+}
+.hijo4{
+    background-color: silver;
+    order: 40;
+    flex-grow: 0;
+    flex-shrink: 1; 
+    flex-basis: auto;
+}
+.hijo5{
+    background-color: snow;
+    order: 50;
+    flex-grow: 0;
+    flex-shrink: 1; 
+    flex-basis: auto;
+}
